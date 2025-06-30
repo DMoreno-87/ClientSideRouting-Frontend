@@ -7,7 +7,7 @@ const AddTask = ({ fetchAllTasks }) => {
   const [description, setDescription] = useState("");
 
   const handleSubmit = async (event) => {
-    event.preventDefault();
+    event.preventDefault(); //page does not relod when u sumit it
     try {
       await axios.post("http://localhost:8080/api/tasks", {
         title,
