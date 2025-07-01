@@ -13,7 +13,7 @@ const App = () => {
   async function fetchAllTasks() {
     try {
       const response = await axios.get(
-        "https://client-side-routing-backend-eight.vercel.app/api/tasks"
+        "https://client-side-routing-backend-alpha.vercel.app/"
       );
       setTasks(response.data);
     } catch (error) {
